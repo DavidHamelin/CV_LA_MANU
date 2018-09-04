@@ -1,2 +1,2 @@
 # CV_LA_MANU
-Positionnement Développeur Web en alternance
+<em>Positionnement Développeur Web en alternance</em>
