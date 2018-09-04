@@ -1,0 +1,367 @@
+/* Polices */
+@font-face
+{
+	font-family: 'big_noodle_titling';
+	src: url('polices/big_noodle_titling.ttf')
+	format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Market_Deco';
+	src: url('polices/Market_Deco.ttf')
+	format('truetype');
+}
+
+/* Titres et corps */
+
+h1, h2
+{
+	font-size: 3.5em;
+}
+
+h1
+{
+	font-family: Market_Deco, Arial, sans-serif;
+	color: #361f18;
+}
+
+
+body
+{
+	font-family: big_noodle_titling, Arial, sans-serif;
+	background: #e7e7e7;
+	font-size: 1.2em;
+}
+
+/* petite résolution corps */
+
+@media all and (max-width: 1024px)
+{
+	body
+	{
+		font-size: 1em;
+	}
+}
+
+/*Menu*/
+
+nav
+{
+	position: fixed;
+	left: 0px;
+	top: 25px;
+	display: flex;
+	margin: auto;
+	background: #e7e7e7;
+	height: 75%;
+	width: 200px;
+	color: black;
+}
+
+nav ul
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+nav ul li
+{
+	background: white;
+	border: 2px white solid;
+	width: 150px;
+	text-align: center;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+
+nav ul li:hover
+{
+	border: 2px gray inset;
+	background: silver;
+}
+
+nav a
+{
+	color: black;
+	text-decoration: none;
+}
+
+nav img
+{
+
+	height: 100px;
+	width: 98px;
+}
+
+
+/* petite résolution menu */
+
+@media all and (max-width: 1024px)
+{
+	nav
+	{
+		position: fixed;
+		top: 0px;
+		display: flex;
+		margin: auto;
+		width: 100%;
+		height: 80px;
+		background: #e7e7e7;
+		color: black
+		text-align: center;
+	}
+
+	nav ul
+	{
+	display: flex;
+	margin: auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	list-style-type: none;
+	}
+
+	nav ul li
+	{
+	margin: 0px 5px;
+	background: white;
+	border: 2px white solid;
+	width: auto;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 85%;
+	}
+
+	nav ul li:hover
+	{
+	border: 2px gray inset;
+	background: silver;
+	}
+
+	nav a
+	{
+	color: black;
+	text-decoration: none;
+	}
+
+	nav img
+	{
+
+	height: 38.5px;
+	width: 38px;
+	}
+}
+
+/*page*/
+
+#contenu
+{
+	text-align: center;
+	font-size: 1.2em;
+	margin-left: 200px;
+}
+
+/* petite résolution contenu */
+
+@media all and (max-width: 1024px)
+{
+	#contenu
+	{
+		font-size: 1em;
+		margin-left: 0px;
+	}
+}
+
+#contenu a
+{
+	color: #d51a33;
+}
+
+/* Présentation */
+
+header
+{
+	background: url(images/hibou.jpg) fixed center;
+}
+
+/* différentes parties */
+
+article 
+{
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background: #0d7e9e;
+	color: white;
+	height: 768px;
+}
+
+article p
+{
+	text-align: left;
+}
+
+article img
+{
+	height: 32px;
+	width: 32px;
+}
+
+
+header, footer
+{
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	color: white;
+	height: 768px;
+}
+
+/* Pied de page */
+
+footer h2
+{
+	font-family: Market_Deco, Arial, sans-serif;
+	color: #d51a33;
+	font-size: 2.5em;
+	text-decoration: underline;
+}
+
+footer
+{
+	flex-direction: column;
+	background: url(images/circuit.jpg) fixed center;
+}
+
+footer em
+{
+	font-family: Market_Deco, Arial, sans-serif;
+	font-size: 3em;
+	font-style: normal;
+}
+
+.myname
+{
+	font-size: 1.5em;
+}
+
+footer p:last-child
+{
+	font-style: italic;
+	font-size: 0.7em;
+}
+
+/* Formations */
+
+#form
+{
+	background: white;
+	color: #0d7e9e;
+}
+
+#form ul
+{
+	list-style-type: none;
+	text-align: left;
+}
+
+#form ul li
+{
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+/* Expériences */
+
+#exp ul
+{
+	list-style-type: none;
+	text-align: left;
+}
+
+#exp ul li
+{
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+/* Compétences */
+
+#comp ul
+{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	list-style-type: none;
+	text-align: left;
+}
+
+#comp ul li
+{
+	font-size: 1.5em;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	color: white;
+
+}
+
+/* Barres de progression */
+
+.office em
+{
+	background: #d51a33;
+	width: 195px;
+	border: 2px solid #0d7e9e;
+	border-radius: 5px;
+}
+
+.adobe em
+{
+	background: #d51a33;
+	width: 195px;
+	border: 2px solid #0d7e9e;
+	border-radius: 5px;
+}
+
+.front em
+{
+	background: #d51a33;
+	width: 170px;
+	border: 2px solid #0d7e9e;
+	border-radius: 5px;
+}
+
+.serv em
+{
+	background: #d51a33;
+	width: 120px;
+	border: 2px solid #0d7e9e;
+	border-radius: 5px;
+}
+
+.wp em
+{
+	background: #d51a33;
+	width: 160px;
+	border: 2px solid #0d7e9e;
+	border-radius: 5px;
+}
