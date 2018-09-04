@@ -1,2 +1,2 @@
 # CV_LA_MANU
-<em>Positionnement Développeur Web en alternance</em>
+<p style="color green"><em>Positionnement Développeur Web en alternance</em></p>
